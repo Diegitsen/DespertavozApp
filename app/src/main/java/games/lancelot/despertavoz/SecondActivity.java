@@ -114,6 +114,7 @@ public class SecondActivity extends AppCompatActivity
         arrayList.add(edit.getText().toString());
         arrayAdapter.notifyDataSetChanged();
 
+
         aux[i] = edit.getText().toString();
 
         edit.setText("");
