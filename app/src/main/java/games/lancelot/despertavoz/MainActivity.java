@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void attachBaseContext(Context newBase) //ponerlo en el context
+    protected void attachBaseContext(Context newBase) //poner el calligraphy en el context
     {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }

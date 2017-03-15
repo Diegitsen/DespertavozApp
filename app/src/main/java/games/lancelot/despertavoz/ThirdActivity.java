@@ -48,6 +48,7 @@ public class ThirdActivity extends AppCompatActivity {
         );
     }
 
+    //cuando hay click se abre el TimePicker
     public void ClickBotonReloj(View v)
     {
         showDialog(DIALOG_ID);
@@ -71,7 +72,7 @@ public class ThirdActivity extends AppCompatActivity {
 
             horaX = hourOfDay;
             minutoX = minute;
-
+            //para mostrar la hora en un textview
             tvHora.setText(horaX + " : " + minutoX);
         }
     };

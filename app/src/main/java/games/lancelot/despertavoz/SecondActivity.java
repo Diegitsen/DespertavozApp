@@ -46,7 +46,7 @@ public class SecondActivity extends AppCompatActivity
         arrayList = new ArrayList<String>();
         arrayAdapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_item, arrayList);
         list.setAdapter(arrayAdapter);
-        //cuando se haga click en un item de ListV , pase a otro activity
+        //cuando se haga click en un item de ListV , pase a otro activity y que se pase el dato de nombre de la alarma a la otra activ.
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -109,12 +109,13 @@ public class SecondActivity extends AppCompatActivity
         startActivity(nuevoLayout);
     }*/
 
+    //para que se agregen alarmas
     public void agrgarAlarmas(View v)
     {
         arrayList.add(edit.getText().toString());
         arrayAdapter.notifyDataSetChanged();
 
-
+        //aux para conservar el nombre de la alarma, puesto que depsues se va a borrar el nombre en la variable original
         aux[i] = edit.getText().toString();
 
         edit.setText("");
