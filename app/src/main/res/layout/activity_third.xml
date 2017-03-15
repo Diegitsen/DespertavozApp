@@ -26,7 +26,7 @@
                 android:text="Nombre"
                 android:textSize="30dp"
                 android:textColor="#FFFFFF"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="20dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginLeft="40dp"/>
@@ -49,13 +49,15 @@
                 android:layout_marginTop="40dp"
                 android:background="@drawable/tiempo"
                 android:layout_below="@+id/tvTituloAlarma"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:onClick="ClickBotonReloj"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Text"
+                android:text="Presionar el reloj"
                 android:id="@+id/tvFechaHora"
+                android:textSize="25dp"
                 android:layout_marginTop="46dp"
                 android:layout_below="@+id/ibreloj"
                 android:layout_centerHorizontal="true" />
