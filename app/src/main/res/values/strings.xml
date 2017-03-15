@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">despertavoz</string>
+
+    <string name="titulo">Despertavoz</string>
+
+    <string name="iniciar">Iniciar</string>
+
+    <string name="encendido">Encendido</string>
+
+    <string name="modo1">Tu cancion favorita como alarma!</string>
+
+    <string name="modo2">Tu grabacion de voz como alarma!</string>
+
+
+</resources>
