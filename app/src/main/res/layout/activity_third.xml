@@ -2,71 +2,65 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo">
+    android:background="@drawable/fondo"><![CDATA[
+    "/>
+    ]]>
 
-    <EditText
+    <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:layout_marginTop="32dp"
-        android:text="Nombre "
-        android:textSize="30dp"
-        android:textColor="#FF525252"
-        android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/editText2"
-        android:layout_toStartOf="@+id/editText2" />
+        android:id="@+id/scrollView2" >
 
-    <Switch
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/encendido"
-        android:id="@+id/switch1"
-        android:layout_marginRight="36dp"
-        android:layout_marginEnd="36dp"
-        android:textColor="#FF525252"
-        android:layout_alignBottom="@+id/editText"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/scrollView2"
+            android:layout_toEndOf="@+id/scrollView2"
+            android:layout_alignParentBottom="true">
 
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:id="@+id/imageView2"
-        android:background="@drawable/tiempo"
-        android:layout_marginTop="28dp"
-        android:layout_below="@+id/editText"
-        android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTituloAlarma"
+                android:text="Nombre"
+                android:textSize="30dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="40dp"/>
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText2"
-        android:text="Tiempo"
-        android:textColor="#FF525252"
-        android:layout_below="@+id/imageView2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="28dp" />
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="@string/modo2"
+                android:id="@+id/bModo2"
+                android:background="#FF6E4F6E"
+                android:textColor="#FFABABAB"
+                android:layout_below="@+id/tvFechaHora"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp" />
 
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="@string/modo1"
-        android:id="@+id/button2"
-        android:layout_marginTop="29dp"
-        android:background="#FF6E4F6E"
-        android:textColor="#FFABABAB"
-        android:layout_below="@+id/editText2"
-        android:layout_centerHorizontal="true" />
+            <ImageButton
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/ibreloj"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/tiempo"
+                android:layout_below="@+id/tvTituloAlarma"
+                android:layout_centerHorizontal="true" />
 
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="@string/modo2"
-        android:id="@+id/button3"
-        android:layout_marginTop="31dp"
-        android:background="#FF6E4F6E"
-        android:textColor="#FFABABAB"
-        android:layout_below="@+id/button2"
-        android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/tvFechaHora"
+                android:layout_marginTop="46dp"
+                android:layout_below="@+id/ibreloj"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>
